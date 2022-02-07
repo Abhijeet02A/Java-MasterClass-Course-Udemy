@@ -8,7 +8,12 @@ public class Main {
         //callLeapYear();
         //callDecimalComparator();
         //callEqualSumChecker();
-        callTeenNumberChecker();
+        //callTeenNumberChecker();
+        //callSecondMinute();
+        //callAreaCalculator();
+        //callMinutesToYearsDaysCalculator();
+        //callIntEqualityPrinter();
+        callPlayingCat();
     }
     static void callSpeedConverter() {
         SpeedConvertor.printConversion(1.5);
@@ -53,5 +58,31 @@ public class Main {
         System.out.println(TeenNumberChecker.isTeen(9));
         System.out.println(TeenNumberChecker.isTeen(13));
         System.out.println(TeenNumberChecker.isTeen(42));
+    }
+    static void callSecondMinute(){
+        System.out.println(SecondMinute.getDurationString(3600));
+        System.out.println(SecondMinute.getDurationString(30000));
+        System.out.println(SecondMinute.getDurationString(75000));
+    }
+    static void callAreaCalculator() {
+        System.out.println(AreaCalculator.area(5.0));
+        System.out.println(AreaCalculator.area(5.0, 4.0));
+        System.out.println(AreaCalculator.area(-1));
+    }
+    static void callMinutesToYearsDaysCalculator() {
+        MinutesToYearsDaysCalculator.printYearsAndDays(-525600);
+        MinutesToYearsDaysCalculator.printYearsAndDays(1051200);
+        MinutesToYearsDaysCalculator.printYearsAndDays(561600);
+    }
+    static void callIntEqualityPrinter() {
+        IntEqualityPrinter.printEqual(1, 1, 1);
+        IntEqualityPrinter.printEqual(1, 1, 2);
+        IntEqualityPrinter.printEqual(-1, -1, -1);
+        IntEqualityPrinter.printEqual(1, 2, 3);
+    }
+    static void callPlayingCat() {
+        System.out.println(PlayingCat.isCatPlaying(true, 10));
+        System.out.println(PlayingCat.isCatPlaying(false, 36));
+        System.out.println(PlayingCat.isCatPlaying(false, 35));
     }
 }
